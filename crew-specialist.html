@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/destination.css">
+  <link rel="stylesheet" href="css/crew.css">
+
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="row">
+      <a class="logo" href=""><img src="assets/shared/logo.svg" alt=""></a>
+      <hr class="nav-line">
+
+      <button class="mobile-nav-toggle" data-visible="false" aria-expanded="false" aria-controls="navigation-bar">
+        <span class="sr-only">Menu</span>
+      </button>
+
+
+      <ul id="navigation-bar" data-visible="false">
+        <li class="nav-link"><a href="index.html"> <span>00</span> Home </a></li>
+        <li class="nav-link"><a href="destination-moon.html"><span>01</span> Destination </a></li>
+        <li class="nav-link active"><a href="crew-commander.html"><span>02</span> Crew </a></li>
+        <li class="nav-link"><a href="technology-vehicle.html"><span>03</span> Technology </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <main class="container crew destination">
+    
+    <div class="homepage__container">
+      <div class="crew-member_info">
+        <p class="intro-text specialist"><span>02</span>Meet your crew</p>
+        <div class="crew-member">
+          <p class="intro-text member-post">Mission Specialist</p>
+          <h2 class="member-name ">Mark Shuttleworth</h2>
+          <p class="member__info">
+            Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+            the Linux-based Ubuntu operating system. Shuttleworth became the first South 
+            African to travel to space as a space tourist.
+          </p>
+        </div>
+        <div class="indicator">
+          <a class="indicator_btn" href="crew-commander.html"><button></button></a>
+          <a class="indicator_btn" href="crew-specialist.html"><button class="active-btn"></button></a>
+          <a class="indicator_btn" href="crew-pilot.html"><button></button></a>
+          <a class="indicator_btn" href="crew-engineer.html"><button></button></a>
+         </div>
+      </div>
+      <div class="crew-member_img specialist">
+        <img src="assets/crew/image-mark-shuttleworth.png" alt="">
+      </div>
+    </div>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

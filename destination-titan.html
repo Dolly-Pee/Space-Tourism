@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/destination.css">
+
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="row">
+      <a class="logo" href=""><img src="assets/shared/logo.svg" alt=""></a>
+      <hr class="nav-line">
+
+      <button class="mobile-nav-toggle" data-visible="false" aria-expanded="false" aria-controls="navigation-bar">
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <ul id="navigation-bar" data-visible="false">
+        <li class="nav-link"><a href="index.html"> <span>00</span> Home </a></li>
+        <li class="nav-link active"><a href="destination-europa.html"><span>01</span> Destination </a></li>
+        <li class="nav-link"><a href="crew-commander.html"><span>02</span> Crew </a></li>
+        <li class="nav-link"><a href="technology-vehicle.html"><span>03</span> Technology </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container destination">
+    <p class="intro-text"><span>01</span>Pick your destination</p>
+
+    <div class="homepage__container">
+      <div class="moon__image">
+        <img src="assets/destination/image-titan.png" alt="">
+      </div>
+      <div class="planetory-bodies_info">
+        <ul class="planetory-bodies_nav">
+          <li class="planetory-bodies_link"><a class="planet-link" href="destination-moon.html">MOON</a></li>
+          <li class="planetory-bodies_link"><a class="planet-link" href="destination-mars.html">MARS</a></li>
+          <li class="planetory-bodies_link"><a class="planet-link" href="destination-europa.html">EUROPA</a></li>
+          <li class="planetory-bodies_link"><a class="active-planet" href="destination-titan.html">TITAN</a></li>
+        </ul>
+        <h1 class="intro-heading">TITANS</h1>
+        <p class="planet-info">
+          The only moon known to have a dense atmosphere other than Earth, Titan 
+          is a home away from home (just a few hundred degrees colder!). As a 
+          bonus, you get striking views of the Rings of Saturn.
+        </p>
+        <hr class="moon-line">
+        <div class="row distance__container">
+          <div>
+            <p>Avg. distance</p>
+            <h4>1.6 bil. km</h4>
+          </div>
+          <div>
+            <p>Est. travel time</p>
+            <h4>7 years</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>  
